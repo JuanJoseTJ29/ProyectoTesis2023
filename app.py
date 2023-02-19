@@ -1,10 +1,11 @@
 import streamlit as st
 from multiapp import MultiApp
-from app import forestpractice # import your app modules here
+
+from app import random_forest # import your app modules here
 
 app = MultiApp()
 
-app.add_app("PREDICCION DE VIOLENCIA FAMILIAR", forestpractice.app)
+app.add_app("PREDICCION DE VIOLENCIA FAMILIAR", random_forest.app)
 
 
 # The main app
