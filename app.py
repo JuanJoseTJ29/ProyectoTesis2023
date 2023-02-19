@@ -1,7 +1,7 @@
 import streamlit as st
 from multiapp import MultiApp
 
-from app import random_forest # import your app modules here
+from apps import random_forest # import your app modules here
 
 app = MultiApp()
 
