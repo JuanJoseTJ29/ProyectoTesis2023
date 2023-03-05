@@ -21,6 +21,18 @@ class MultiApp:
                 ### Rodrigo Ervin Quinteros Peralta
                 ### Juan Jose Tirado Julca
         ''')
+        st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background: url("https://www.todofondos.net/wp-content/uploads/hq-todofondos-colorespasteles8.jpg");
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+        
+        )
         app = st.selectbox(
             'Elija el modelo de su preferencia',
             self.apps,
