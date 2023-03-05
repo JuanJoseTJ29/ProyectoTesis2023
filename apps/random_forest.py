@@ -1,13 +1,17 @@
-#import matplotlib.pyplot as plt
-#import numpy as np
-#import pandas as pd
-#import seaborn as sb
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import seaborn as sb
 import time
 import datetime
 import streamlit as st
+import joblib
+import sklearn.externals as extjoblib
 
 def app():
     
+#    modelo_nuevo = joblib.load('modelo_entrenado.pkl')
+
     st.title('Prediccion de la Violencia Familiar') 
     st.subheader('Pregunta 01: Su esposo/compañero se pone (ponía) celoso o molesto si usted conversa (conversaba) con otro hombre')
     pregunta_1 = st.radio("", ('SI','NO'),key = "1")
@@ -29,6 +33,6 @@ def app():
     pregunta_9 = st.radio("", ('SI','NO'),key = "9")
 
     if st.button('Analizar'):
-        st.write('Usted sufre violencia intrafamiliar')
+        st.write(pregunta_1)
     else:
         st.write('NO Sufre violencia intrafamiliar')
