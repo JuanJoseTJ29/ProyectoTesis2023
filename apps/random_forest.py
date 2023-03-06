@@ -57,7 +57,7 @@ def app():
         lista_pregunta[8] = '1'
 
     if st.button('Analizar'):
-        resultado_prediccion = servicio_prediccion(lista_pregunta)
+        resultado_prediccion = service.servicio_prediccion(lista_pregunta)
         st.write(lista_pregunta)
     else:
         st.write('NO Sufre violencia intrafamiliar')
