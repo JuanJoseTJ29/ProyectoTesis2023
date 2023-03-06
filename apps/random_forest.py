@@ -4,16 +4,16 @@ import pandas as pd
 import seaborn as sb
 import time
 import datetime
+#import joblib
 import streamlit as st
 from PIL import Image
-import joblib
-import sklearn.externals as extjoblib
+#import sklearn.externals as extjoblib
 
 from service import service
 
 def app():
     
-#    modelo_nuevo = joblib.load('modelo_entrenado.pkl')
+    #modelo_nuevo = joblib.load('modelo_entrenado.pkl')
     st.title('Pcredicion de la Violencia Familiar') 
     image = Image.open('./image/Violencia-family.jpg')
     #st.sidebar.image('./image/violencia_intrafamiliar.jpg')
